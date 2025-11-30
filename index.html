@@ -3,1635 +3,305 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>تحليل شامل للعقود تحت الإجراء - 445 عقد</title>
+    <title>نظام إدارة العقود الأكاديمية - المركز الوطني للتقويم والاعتماد الأكاديمي</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <header class="main-header">
-            <h1> نظام تحليل العقود الأكاديمية التي تحت الاجراء</h1>
-            <div class="stats-summary">
-                <div class="stat-card">
+    <header class="gov-header">
+        <div class="header-container">
+            <div class="logo-section">
+                <div class="logo-placeholder">
+                    <svg width="60" height="60" viewBox="0 0 60 60">
+                        <rect width="60" height="60" fill="#006C35" rx="8"/>
+                        <text x="30" y="38" font-size="24" fill="white" text-anchor="middle" font-weight="bold">NCAAA</text>
+                    </svg>
+                </div>
+                <div class="header-text">
+                    <h1>المركز الوطني للتقويم والاعتماد الأكاديمي</h1>
+                    <p>نظام إدارة ومتابعة العقود الأكاديمية</p>
+                </div>
+            </div>
+            <div class="header-stats">
+                <div class="stat-box">
                     <span class="stat-number">445</span>
                     <span class="stat-label">إجمالي العقود</span>
                 </div>
-                <div class="stat-card">
-                    <span class="stat-number">87</span>
-                    <span class="stat-label">جامعة وكلية</span>
-                </div>
-                <div class="stat-card">
-                    <span class="stat-number">5</span>
-                    <span class="stat-label">إدارات مختصة</span>
-                </div>
-            </div>
-        </header>
-
-        <!-- التبويبات الرئيسية -->
-        <div class="tabs">
-            <button class="tab-btn active" onclick="openTab(event, 'contracts')">📋 حالة العقود</button>
-            <button class="tab-btn" onclick="openTab(event, 'universities')">🏛️ تفاصيل الجامعات</button>
-            <button class="tab-btn" onclick="openTab(event, 'majors')">📚 التخصصات</button>
-            <button class="tab-btn" onclick="openTab(event, 'dates')">📅 البحث بالتاريخ</button>
-            <button class="tab-btn" onclick="openTab(event, 'departments')">🏢 الإدارات</button>
-        </div>
-
-        <!-- محتوى التبويب: حالة العقود -->
-        <div id="contracts" class="tab-content active">
-            <h2>📊 توزيع العقود حسب تاريخ الانتهاء</h2>
-            
-            <!-- العقود المنتهية أو القريبة من الانتهاء -->
-            <div class="section-card">
-                <div class="section-header critical">
-                    <h3>🔴 منتهية أو قريبة من الانتهاء - تنتهي قبل نهاية 2024</h3>
-                    <span class="count-badge">3 عقود</span>
-                </div>
-                <div class="contracts-list">
-                    <div class="contract-item">
-                        <div class="contract-details">
-                            <h4>إنتاج النبات ووقايته</h4>
-                            <p><strong>الجامعة:</strong> جامعة القصيم</p>
-                            <p><strong>الدرجة:</strong> بكالوريوس</p>
-                            <p><strong>بداية:</strong> 28/02/2023 | <strong>انتهاء:</strong> 27/02/2024</p>
-                            <p><strong>الإدارة:</strong> إدارة برامج التخصصات العلمية</p>
-                        </div>
-                        <span class="status-badge expired">منتهي</span>
-                    </div>
-                    <div class="contract-item">
-                        <div class="contract-details">
-                            <h4>إنتاج الحيوان وتربيته</h4>
-                            <p><strong>الجامعة:</strong> جامعة القصيم</p>
-                            <p><strong>الدرجة:</strong> بكالوريوس</p>
-                            <p><strong>بداية:</strong> 28/02/2023 | <strong>انتهاء:</strong> 27/02/2024</p>
-                            <p><strong>الإدارة:</strong> إدارة برامج التخصصات العلمية</p>
-                        </div>
-                        <span class="status-badge expired">منتهي</span>
-                    </div>
-                    <div class="contract-item">
-                        <div class="contract-details">
-                            <h4>رياض الأطفال</h4>
-                            <p><strong>الجامعة:</strong> جامعة الملك خالد</p>
-                            <p><strong>الدرجة:</strong> بكالوريوس</p>
-                            <p><strong>بداية:</strong> 08/03/2018 | <strong>انتهاء:</strong> 08/09/2019</p>
-                            <p><strong>الإدارة:</strong> إدارة برامج العلوم الإنسانية والتربوية</p>
-                        </div>
-                        <span class="status-badge expired">منتهي</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- النصف الأول 2025 -->
-            <div class="section-card">
-                <div class="section-header warning">
-                    <h3>🟡 تنتهي في النصف الأول 2025 (يناير - يونيو)</h3>
-                    <span class="count-badge">81 عقد</span>
-                </div>
-                <div class="contracts-list">
-                    <!-- العقود التي تنتهي في مارس 2025 -->
-                    <div class="contract-item">
-                        <div class="contract-details">
-                            <h4>الاقتصاد</h4>
-                            <p><strong>الجامعة:</strong> الجامعة الإسلامية</p>
-                            <p><strong>الدرجة:</strong> ماجستير</p>
-                            <p><strong>بداية:</strong> 07/03/2024 | <strong>انتهاء:</strong> 06/03/2025</p>
-                            <p><strong>الإدارة:</strong> إدارة برامج العلوم الإنسانية والتربوية</p>
-                            <p><strong>نسبة الإنجاز:</strong> 40% - زيارة التحقق</p>
-                            <p><strong>زيارة المراجعين:</strong> 25/01/2026 (متأخر)</p>
-                        </div>
-                        <span class="status-badge active">نشط</span>
-                    </div>
-                    <div class="contract-item">
-                        <div class="contract-details">
-                            <h4>الإعلام والاتصال</h4>
-                            <p><strong>الجامعة:</strong> الجامعة الإسلامية</p>
-                            <p><strong>الدرجة:</strong> ماجستير</p>
-                            <p><strong>بداية:</strong> 07/03/2024 | <strong>انتهاء:</strong> 06/03/2025</p>
-                            <p><strong>الإدارة:</strong> إدارة برامج العلوم الإنسانية والتربوية</p>
-                            <p><strong>نسبة الإنجاز:</strong> 40% - زيارة التحقق</p>
-                            <p><strong>زيارة المراجعين:</strong> 01/02/2026 (متأخر)</p>
-                        </div>
-                        <span class="status-badge active">نشط</span>
-                    </div>
-                    <div class="contract-item">
-                        <div class="contract-details">
-                            <h4>أصول التربية الإسلامية</h4>
-                            <p><strong>الجامعة:</strong> الجامعة الإسلامية</p>
-                            <p><strong>الدرجة:</strong> ماجستير</p>
-                            <p><strong>بداية:</strong> 07/03/2024 | <strong>انتهاء:</strong> 06/03/2025</p>
-                            <p><strong>الإدارة:</strong> إدارة برامج العلوم الإنسانية والتربوية</p>
-                            <p><strong>نسبة الإنجاز:</strong> 40% - زيارة التحقق</p>
-                            <p><strong>زيارة المراجعين:</strong> 30/11/2025 (جدولة متأخرة)</p>
-                        </div>
-                        <span class="status-badge active">نشط</span>
-                    </div>
-                    <div class="contract-item">
-                        <div class="contract-details">
-                            <h4>تقنية المعلومات</h4>
-                            <p><strong>الجامعة:</strong> جامعة الأميرة نورة بنت عبد الرحمن</p>
-                            <p><strong>الدرجة:</strong> بكالوريوس</p>
-                            <p><strong>بداية:</strong> 07/03/2024 | <strong>انتهاء:</strong> 06/03/2025</p>
-                            <p><strong>الإدارة:</strong> إدارة برامج العلوم الهندسية وعلوم الحاسب</p>
-                            <p><strong>نسبة الإنجاز:</strong> 40% - زيارة التحقق</p>
-                            <p><strong>زيارة المراجعين:</strong> 15/02/2026 (متأخر)</p>
-                        </div>
-                        <span class="status-badge active">نشط</span>
-                    </div>
-                    <div class="contract-item">
-                        <div class="contract-details">
-                            <h4>علوم الحاسبات</h4>
-                            <p><strong>الجامعة:</strong> جامعة الأميرة نورة بنت عبد الرحمن</p>
-                            <p><strong>الدرجة:</strong> بكالوريوس</p>
-                            <p><strong>بداية:</strong> 07/03/2024 | <strong>انتهاء:</strong> 06/03/2025</p>
-                            <p><strong>الإدارة:</strong> إدارة برامج العلوم الهندسية وعلوم الحاسب</p>
-                            <p><strong>نسبة الإنجاز:</strong> 40% - زيارة التحقق</p>
-                            <p><strong>زيارة المراجعين:</strong> 15/02/2026 (متأخر)</p>
-                        </div>
-                        <span class="status-badge active">نشط</span>
-                    </div>
-                    <div class="contract-item">
-                        <div class="contract-details">
-                            <h4>نظم المعلومات</h4>
-                            <p><strong>الجامعة:</strong> جامعة الأميرة نورة بنت عبد الرحمن</p>
-                            <p><strong>الدرجة:</strong> بكالوريوس</p>
-                            <p><strong>بداية:</strong> 07/03/2024 | <strong>انتهاء:</strong> 06/03/2025</p>
-                            <p><strong>الإدارة:</strong> إدارة برامج العلوم الهندسية وعلوم الحاسب</p>
-                            <p><strong>نسبة الإنجاز:</strong> 40% - زيارة التحقق</p>
-                            <p><strong>زيارة المراجعين:</strong> 15/02/2026 (متأخر)</p>
-                        </div>
-                        <span class="status-badge active">نشط</span>
-                    </div>
-                    <div class="contract-item">
-                        <div class="contract-details">
-                            <h4>أمراض التخاطب والبلع</h4>
-                            <p><strong>الجامعة:</strong> جامعة الأميرة نورة بنت عبد الرحمن</p>
-                            <p><strong>الدرجة:</strong> بكالوريوس</p>
-                            <p><strong>بداية:</strong> 07/03/2024 | <strong>انتهاء:</strong> 06/03/2025</p>
-                            <p><strong>الإدارة:</strong> إدارة برامج العلوم الصحية</p>
-                            <p><strong>نسبة الإنجاز:</strong> 30% - دراسة الوثائق</p>
-                        </div>
-                        <span class="status-badge active">نشط</span>
-                    </div>
-                    <div class="contract-item">
-                        <div class="contract-details">
-                            <h4>إدارة المكاتب</h4>
-                            <p><strong>الجامعة:</strong> جامعة الأميرة نورة بنت عبد الرحمن</p>
-                            <p><strong>الدرجة:</strong> دبلوم</p>
-                            <p><strong>بداية:</strong> 07/03/2024 | <strong>انتهاء:</strong> 06/03/2025</p>
-                            <p><strong>الإدارة:</strong> إدارة برامج العلوم الإنسانية والتربوية</p>
-                            <p><strong>نسبة الإنجاز:</strong> 40% - زيارة التحقق</p>
-                            <p><strong>زيارة المراجعين:</strong> 15/02/2026 (متأخر)</p>
-                        </div>
-                        <span class="status-badge active">نشط</span>
-                    </div>
-                    <div class="contract-item">
-                        <div class="contract-details">
-                            <h4>التسويق</h4>
-                            <p><strong>الجامعة:</strong> جامعة الأميرة نورة بنت عبد الرحمن</p>
-                            <p><strong>الدرجة:</strong> دبلوم</p>
-                            <p><strong>بداية:</strong> 07/03/2024 | <strong>انتهاء:</strong> 06/03/2025</p>
-                            <p><strong>الإدارة:</strong> إدارة برامج العلوم الإنسانية والتربوية</p>
-                            <p><strong>نسبة الإنجاز:</strong> 40% - زيارة التحقق</p>
-                            <p><strong>زيارة المراجعين:</strong> 15/02/2026 (متأخر)</p>
-                        </div>
-                        <span class="status-badge active">نشط</span>
-                    </div>
-                    <div class="contract-item">
-                        <div class="contract-details">
-                            <h4>المحاسبة</h4>
-                            <p><strong>الجامعة:</strong> جامعة الأميرة نورة بنت عبد الرحمن</p>
-                            <p><strong>الدرجة:</strong> دبلوم</p>
-                            <p><strong>بداية:</strong> 07/03/2024 | <strong>انتهاء:</strong> 06/03/2025</p>
-                            <p><strong>الإدارة:</strong> إدارة برامج العلوم الإنسانية والتربوية</p>
-                            <p><strong>نسبة الإنجاز:</strong> 40% - زيارة التحقق</p>
-                            <p><strong>زيارة المراجعين:</strong> 15/02/2026 (متأخر)</p>
-                        </div>
-                        <span class="status-badge active">نشط</span>
-                    </div>
-                    <div class="contract-item">
-                        <div class="contract-details">
-                            <h4>علم المعلومات</h4>
-                            <p><strong>الجامعة:</strong> جامعة الأميرة نورة بنت عبد الرحمن</p>
-                            <p><strong>الدرجة:</strong> بكالوريوس</p>
-                            <p><strong>بداية:</strong> 07/03/2024 | <strong>انتهاء:</strong> 06/03/2025</p>
-                            <p><strong>الإدارة:</strong> إدارة برامج العلوم الإنسانية والتربوية</p>
-                            <p><strong>نسبة الإنجاز:</strong> 40% - زيارة التحقق</p>
-                            <p><strong>زيارة المراجعين:</strong> 08/02/2026 (متأخر)</p>
-                        </div>
-                        <span class="status-badge active">نشط</span>
-                    </div>
-                    <div class="contract-item">
-                        <div class="contract-details">
-                            <h4>تصميم الأزياء والنسيج</h4>
-                            <p><strong>الجامعة:</strong> جامعة الأميرة نورة بنت عبد الرحمن</p>
-                            <p><strong>الدرجة:</strong> ماجستير</p>
-                            <p><strong>بداية:</strong> 07/03/2024 | <strong>انتهاء:</strong> 06/03/2025</p>
-                            <p><strong>الإدارة:</strong> إدارة برامج العلوم الإنسانية والتربوية</p>
-                            <p><strong>نسبة الإنجاز:</strong> 40% - زيارة التحقق</p>
-                            <p><strong>زيارة المراجعين:</strong> 05/04/2026 (متأخر)</p>
-                        </div>
-                        <span class="status-badge active">نشط</span>
-                    </div>
-                    <div class="contract-item">
-                        <div class="contract-details">
-                            <h4>علوم الرياضة والنشاط البدني</h4>
-                            <p><strong>الجامعة:</strong> جامعة الأميرة نورة بنت عبد الرحمن</p>
-                            <p><strong>الدرجة:</strong> بكالوريوس</p>
-                            <p><strong>بداية:</strong> 07/03/2024 | <strong>انتهاء:</strong> 06/03/2025</p>
-                            <p><strong>الإدارة:</strong> إدارة برامج العلوم الإنسانية والتربوية</p>
-                            <p><strong>نسبة الإنجاز:</strong> 40% - زيارة التحقق</p>
-                            <p><strong>زيارة المراجعين:</strong> 05/04/2026 (متأخر)</p>
-                        </div>
-                        <span class="status-badge active">نشط</span>
-                    </div>
-                    <div class="contract-item">
-                        <div class="contract-details">
-                            <h4>علوم المختبرات</h4>
-                            <p><strong>الجامعة:</strong> جامعة الأمير سطام بن عبد العزيز</p>
-                            <p><strong>الدرجة:</strong> بكالوريوس</p>
-                            <p><strong>بداية:</strong> 10/03/2024 | <strong>انتهاء:</strong> 09/03/2025</p>
-                            <p><strong>الإدارة:</strong> إدارة برامج العلوم الصحية</p>
-                            <p><strong>نسبة الإنجاز:</strong> 5% - اللقاء التعريفي</p>
-                        </div>
-                        <span class="status-badge active">نشط</span>
-                    </div>
-                    <div class="contract-item">
-                        <div class="contract-details">
-                            <h4>العلاج الطبيعي</h4>
-                            <p><strong>الجامعة:</strong> جامعة الأمير سطام بن عبد العزيز</p>
-                            <p><strong>الدرجة:</strong> بكالوريوس</p>
-                            <p><strong>بداية:</strong> 10/03/2024 | <strong>انتهاء:</strong> 09/03/2025</p>
-                            <p><strong>الإدارة:</strong> إدارة برامج العلوم الصحية</p>
-                            <p><strong>نسبة الإنجاز:</strong> 5% - اللقاء التعريفي</p>
-                        </div>
-                        <span class="status-badge active">نشط</span>
-                    </div>
-                    <div class="contract-item">
-                        <div class="contract-details">
-                            <h4>علوم التمريض</h4>
-                            <p><strong>الجامعة:</strong> جامعة الأمير سطام بن عبد العزيز</p>
-                            <p><strong>الدرجة:</strong> بكالوريوس</p>
-                            <p><strong>بداية:</strong> 10/03/2024 | <strong>انتهاء:</strong> 09/03/2025</p>
-                            <p><strong>الإدارة:</strong> إدارة برامج العلوم الصحية</p>
-                            <p><strong>نسبة الإنجاز:</strong> 30% - دراسة الوثائق</p>
-                            <p><strong>زيارة المراجعين:</strong> 01/02/2026</p>
-                        </div>
-                        <span class="status-badge active">نشط</span>
-                    </div>
-                    <div class="contract-item">
-                        <div class="contract-details">
-                            <h4>الأشعة والتصوير الطبي</h4>
-                            <p><strong>الجامعة:</strong> جامعة الأمير سطام بن عبد العزيز</p>
-                            <p><strong>الدرجة:</strong> بكالوريوس</p>
-                            <p><strong>بداية:</strong> 10/03/2024 | <strong>انتهاء:</strong> 09/03/2025</p>
-                            <p><strong>الإدارة:</strong> إدارة برامج العلوم الصحية</p>
-                            <p><strong>نسبة الإنجاز:</strong> 5% - اللقاء التعريفي</p>
-                        </div>
-                        <span class="status-badge active">نشط</span>
-                    </div>
-                    <div class="contract-item">
-                        <div class="contract-details">
-                            <h4>تقنية الأجهزة الطبية</h4>
-                            <p><strong>الجامعة:</strong> جامعة الأمير سطام بن عبد العزيز</p>
-                            <p><strong>الدرجة:</strong> بكالوريوس</p>
-                            <p><strong>بداية:</strong> 10/03/2024 | <strong>انتهاء:</strong> 09/03/2025</p>
-                            <p><strong>الإدارة:</strong> إدارة برامج العلوم الصحية</p>
-                            <p><strong>نسبة الإنجاز:</strong> 5% - اللقاء التعريفي</p>
-                        </div>
-                        <span class="status-badge active">نشط</span>
-                    </div>
-                    <div class="contract-item">
-                        <div class="contract-details">
-                            <h4>العلاج الطبيعي لأمراض الأعصاب</h4>
-                            <p><strong>الجامعة:</strong> جامعة الأمير سطام بن عبد العزيز</p>
-                            <p><strong>الدرجة:</strong> ماجستير</p>
-                            <p><strong>بداية:</strong> 10/03/2024 | <strong>انتهاء:</strong> 09/03/2025</p>
-                            <p><strong>الإدارة:</strong> إدارة برامج العلوم الصحية</p>
-                            <p><strong>نسبة الإنجاز:</strong> 5% - اللقاء التعريفي</p>
-                        </div>
-                        <span class="status-badge active">نشط</span>
-                    </div>
-                    <div class="contract-item">
-                        <div class="contract-details">
-                            <h4>العلاج الطبيعي لأمراض الأطفال</h4>
-                            <p><strong>الجامعة:</strong> جامعة الأمير سطام بن عبد العزيز</p>
-                            <p><strong>الدرجة:</strong> ماجستير</p>
-                            <p><strong>بداية:</strong> 10/03/2024 | <strong>انتهاء:</strong> 09/03/2025</p>
-                            <p><strong>الإدارة:</strong> إدارة برامج العلوم الصحية</p>
-                            <p><strong>نسبة الإنجاز:</strong> 5% - اللقاء التعريفي</p>
-                        </div>
-                        <span class="status-badge active">نشط</span>
-                    </div>
-                    <div class="contract-item">
-                        <div class="contract-details">
-                            <h4>العلوم في الرياضيات</h4>
-                            <p><strong>الجامعة:</strong> جامعة الأمير سطام بن عبد العزيز</p>
-                            <p><strong>الدرجة:</strong> ماجستير</p>
-                            <p><strong>بداية:</strong> 10/03/2024 | <strong>انتهاء:</strong> 09/03/2025</p>
-                            <p><strong>الإدارة:</strong> إدارة برامج التخصصات العلمية</p>
-                            <p><strong>نسبة الإنجاز:</strong> 5% - اللقاء التعريفي</p>
-                        </div>
-                        <span class="status-badge active">نشط</span>
-                    </div>
-                    <div class="contract-item">
-                        <div class="contract-details">
-                            <h4>الفلسفة في علوم التربة</h4>
-                            <p><strong>الجامعة:</strong> جامعة الملك سعود</p>
-                            <p><strong>الدرجة:</strong> دكتوراه</p>
-                            <p><strong>بداية:</strong> 05/03/2024 | <strong>انتهاء:</strong> 04/03/2025</p>
-                            <p><strong>الإدارة:</strong> إدارة برامج التخصصات العلمية</p>
-                            <p><strong>نسبة الإنجاز:</strong> 40% - زيارة التحقق</p>
-                            <p><strong>زيارة المراجعين:</strong> 07/12/2025 (متأخر)</p>
-                        </div>
-                        <span class="status-badge active">نشط</span>
-                    </div>
-                    <div class="contract-item">
-                        <div class="contract-details">
-                            <h4>التصميم الداخلي</h4>
-                            <p><strong>الجامعة:</strong> كليات الأصالة</p>
-                            <p><strong>الدرجة:</strong> بكالوريوس</p>
-                            <p><strong>بداية:</strong> 02/03/2024 | <strong>انتهاء:</strong> 01/03/2025</p>
-                            <p><strong>الإدارة:</strong> إدارة برامج العلوم الهندسية وعلوم الحاسب</p>
-                            <p><strong>نسبة الإنجاز:</strong> 40% - زيارة التحقق</p>
-                            <p><strong>زيارة المراجعين:</strong> 21/12/2025 (متأخر)</p>
-                        </div>
-                        <span class="status-badge active">نشط</span>
-                    </div>
-                    <div class="contract-item">
-                        <div class="contract-details">
-                            <h4>العمارة</h4>
-                            <p><strong>الجامعة:</strong> كليات الأصالة</p>
-                            <p><strong>الدرجة:</strong> بكالوريوس</p>
-                            <p><strong>بداية:</strong> 02/03/2024 | <strong>انتهاء:</strong> 01/03/2025</p>
-                            <p><strong>الإدارة:</strong> إدارة برامج العلوم الهندسية وعلوم الحاسب</p>
-                            <p><strong>نسبة الإنجاز:</strong> 40% - زيارة التحقق</p>
-                            <p><strong>زيارة المراجعين:</strong> 21/12/2025 (متأخر)</p>
-                        </div>
-                        <span class="status-badge active">نشط</span>
-                    </div>
-                    <div class="contract-item">
-                        <div class="contract-details">
-                            <h4>الأعمال - المالية</h4>
-                            <p><strong>الجامعة:</strong> كليات الأصالة</p>
-                            <p><strong>الدرجة:</strong> بكالوريوس</p>
-                            <p><strong>بداية:</strong> 02/03/2024 | <strong>انتهاء:</strong> 01/03/2025</p>
-                            <p><strong>الإدارة:</strong> إدارة برامج العلوم الإنسانية والتربوية</p>
-                            <p><strong>نسبة الإنجاز:</strong> 40% - زيارة التحقق</p>
-                            <p><strong>زيارة المراجعين:</strong> 21/12/2025</p>
-                        </div>
-                        <span class="status-badge active">نشط</span>
-                    </div>
-                    <div class="contract-item">
-                        <div class="contract-details">
-                            <h4>الأعمال - الموارد البشرية</h4>
-                            <p><strong>الجامعة:</strong> كليات الأصالة</p>
-                            <p><strong>الدرجة:</strong> بكالوريوس</p>
-                            <p><strong>بداية:</strong> 02/03/2024 | <strong>انتهاء:</strong> 01/03/2025</p>
-                            <p><strong>الإدارة:</strong> إدارة برامج العلوم الإنسانية والتربوية</p>
-                            <p><strong>نسبة الإنجاز:</strong> 40% - زيارة التحقق</p>
-                            <p><strong>زيارة المراجعين:</strong> 21/12/2025</p>
-                        </div>
-                        <span class="status-badge active">نشط</span>
-                    </div>
-                    <div class="contract-item">
-                        <div class="contract-details">
-                            <h4>الإدارة الهندسية</h4>
-                            <p><strong>الجامعة:</strong> جامعة تبوك</p>
-                            <p><strong>الدرجة:</strong> ماجستير</p>
-                            <p><strong>بداية:</strong> 03/03/2024 | <strong>انتهاء:</strong> 02/03/2025</p>
-                            <p><strong>الإدارة:</strong> إدارة برامج العلوم الهندسية وعلوم الحاسب</p>
-                            <p><strong>نسبة الإنجاز:</strong> 40% - زيارة التحقق</p>
-                            <p><strong>زيارة المراجعين:</strong> 14/12/2025 (متأخر)</p>
-                        </div>
-                        <span class="status-badge active">نشط</span>
-                    </div>
-                    <div class="contract-item">
-                        <div class="contract-details">
-                            <h4>الفقة</h4>
-                            <p><strong>الجامعة:</strong> جامعة تبوك</p>
-                            <p><strong>الدرجة:</strong> ماجستير</p>
-                            <p><strong>بداية:</strong> 03/03/2024 | <strong>انتهاء:</strong> 02/03/2025</p>
-                            <p><strong>الإدارة:</strong> إدارة برامج العلوم الإسلامية والعربية</p>
-                            <p><strong>نسبة الإنجاز:</strong> 40% - زيارة التحقق</p>
-                            <p><strong>زيارة المراجعين:</strong> 07/12/2025 (متأخر)</p>
-                        </div>
-                        <span class="status-badge active">نشط</span>
-                    </div>
-                    <div class="contract-item">
-                        <div class="contract-details">
-                            <h4>إدارة الاعمال</h4>
-                            <p><strong>الجامعة:</strong> جامعة الفيصل</p>
-                            <p><strong>الدرجة:</strong> ماجستير</p>
-                            <p><strong>بداية:</strong> 04/06/2024 | <strong>انتهاء:</strong> 03/06/2025</p>
-                            <p><strong>الإدارة:</strong> إدارة برامج العلوم الإنسانية والتربوية</p>
-                            <p><strong>نسبة الإنجاز:</strong> 40% - زيارة التحقق</p>
-                            <p><strong>زيارة المراجعين:</strong> 14/12/2025 (متأخر)</p>
-                        </div>
-                        <span class="status-badge active">نشط</span>
-                    </div>
-                    <div class="contract-item">
-                        <div class="contract-details">
-                            <h4>العقيدة والمذاهب المعاصرة</h4>
-                            <p><strong>الجامعة:</strong> جامعة الإمام محمد بن سعود الإسلامية</p>
-                            <p><strong>الدرجة:</strong> دكتوراه</p>
-                            <p><strong>بداية:</strong> 05/06/2024 | <strong>انتهاء:</strong> 04/06/2025</p>
-                            <p><strong>الإدارة:</strong> إدارة برامج العلوم الإسلامية والعربية</p>
-                        </div>
-                        <span class="status-badge active">نشط</span>
-                    </div>
-                    <div class="contract-item">
-                        <div class="contract-details">
-                            <h4>العقيدة والمذاهب المعاصرة</h4>
-                            <p><strong>الجامعة:</strong> جامعة الإمام محمد بن سعود الإسلامية</p>
-                            <p><strong>الدرجة:</strong> ماجستير</p>
-                            <p><strong>بداية:</strong> 05/06/2024 | <strong>انتهاء:</strong> 04/06/2025</p>
-                            <p><strong>الإدارة:</strong> إدارة برامج العلوم الإسلامية والعربية</p>
-                        </div>
-                        <span class="status-badge active">نشط</span>
-                    </div>
-                    <div class="contract-item">
-                        <div class="contract-details">
-                            <h4>الدراسات القضائية (بالمقررات الدراسية والرسالة )</h4>
-                            <p><strong>الجامعة:</strong> جامعة الملك عبد العزيز</p>
-                            <p><strong>الدرجة:</strong> ماجستير</p>
-                            <p><strong>بداية:</strong> 05/06/2024 | <strong>انتهاء:</strong> 04/06/2025</p>
-                            <p><strong>الإدارة:</strong> إدارة برامج العلوم الإسلامية والعربية</p>
-                        </div>
-                        <span class="status-badge active">نشط</span>
-                    </div>
-                    <div class="contract-item">
-                        <div class="contract-details">
-                            <h4>العلوم في الإحصاء</h4>
-                            <p><strong>الجامعة:</strong> جامعة الملك عبد العزيز</p>
-                            <p><strong>الدرجة:</strong> ماجستير</p>
-                            <p><strong>بداية:</strong> 05/06/2024 | <strong>انتهاء:</strong> 04/06/2025</p>
-                            <p><strong>الإدارة:</strong> إدارة برامج التخصصات العلمية</p>
-                        </div>
-                        <span class="status-badge active">نشط</span>
-                    </div>
-                    <div class="contract-item">
-                        <div class="contract-details">
-                            <h4>التربية في علم النفس التربوي/ التوجيه والإرشاد التربوي</h4>
-                            <p><strong>الجامعة:</strong> جامعة الملك عبد العزيز</p>
-                            <p><strong>الدرجة:</strong> ماجستير</p>
-                            <p><strong>بداية:</strong> 05/06/2024 | <strong>انتهاء:</strong> 04/06/2025</p>
-                            <p><strong>الإدارة:</strong> إدارة برامج العلوم الإنسانية والتربوية</p>
-                            <p><strong>نسبة الإنجاز:</strong> 40% - زيارة التحقق</p>
-                            <p><strong>زيارة المراجعين:</strong> 07/12/2025 (متأخر)</p>
-                        </div>
-                        <span class="status-badge active">نشط</span>
-                    </div>
-                    <div class="contract-item">
-                        <div class="contract-details">
-                            <h4>علوم المعلومات الجغرافية</h4>
-                            <p><strong>الجامعة:</strong> جامعة بيشة</p>
-                            <p><strong>الدرجة:</strong> بكالوريوس</p>
-                            <p><strong>بداية:</strong> 04/06/2024 | <strong>انتهاء:</strong> 03/06/2025</p>
-                            <p><strong>الإدارة:</strong> إدارة برامج العلوم الإنسانية والتربوية</p>
-                            <p><strong>نسبة الإنجاز:</strong> 40% - زيارة التحقق</p>
-                            <p><strong>زيارة المراجعين:</strong> 30/11/2025 (متأخر)</p>
-                        </div>
-                        <span class="status-badge active">نشط</span>
-                    </div>
-                    <!-- عقود أخرى تنتهي في النصف الأول من 2025... -->
-                    <!-- سأقوم بإضافة المزيد من العقود بنفس التفاصيل -->
-                </div>
-            </div>
-
-            <!-- النصف الثاني 2025 -->
-            <div class="section-card">
-                <div class="section-header moderate">
-                    <h3>🟢 تنتهي في النصف الثاني 2025 (يوليو - ديسمبر)</h3>
-                    <span class="count-badge">109 عقود</span>
-                </div>
-                <div class="contracts-list">
-                    <!-- سأضيف جميع العقود التي تنتهي في النصف الثاني من 2025 -->
-                    <div class="contract-item">
-                        <div class="contract-details">
-                            <h4>هندسة الحاسب</h4>
-                            <p><strong>الجامعة:</strong> جامعة القصيم</p>
-                            <p><strong>الدرجة:</strong> بكالوريوس</p>
-                            <p><strong>بداية:</strong> 09/10/2024 | <strong>انتهاء:</strong> 08/10/2025</p>
-                            <p><strong>الإدارة:</strong> إدارة برامج العلوم الهندسية وعلوم الحاسب</p>
-                            <p><strong>نسبة الإنجاز:</strong> 40% - زيارة التحقق</p>
-                            <p><strong>زيارة المراجعين:</strong> 05/04/2026 (متأخر)</p>
-                        </div>
-                        <span class="status-badge active">نشط</span>
-                    </div>
-                    <div class="contract-item">
-                        <div class="contract-details">
-                            <h4>تقنية المعلومات</h4>
-                            <p><strong>الجامعة:</strong> جامعة القصيم</p>
-                            <p><strong>الدرجة:</strong> بكالوريوس</p>
-                            <p><strong>بداية:</strong> 09/10/2024 | <strong>انتهاء:</strong> 08/10/2025</p>
-                            <p><strong>الإدارة:</strong> إدارة برامج العلوم الهندسية وعلوم الحاسب</p>
-                            <p><strong>نسبة الإنجاز:</strong> 40% - زيارة التحقق</p>
-                            <p><strong>زيارة المراجعين:</strong> 05/04/2026 (متأخر)</p>
-                        </div>
-                        <span class="status-badge active">نشط</span>
-                    </div>
-                    <div class="contract-item">
-                        <div class="contract-details">
-                            <h4>علوم الحاسب</h4>
-                            <p><strong>الجامعة:</strong> جامعة القصيم</p>
-                            <p><strong>الدرجة:</strong> بكالوريوس</p>
-                            <p><strong>بداية:</strong> 09/10/2024 | <strong>انتهاء:</strong> 08/10/2025</p>
-                            <p><strong>الإدارة:</strong> إدارة برامج العلوم الهندسية وعلوم الحاسب</p>
-                            <p><strong>نسبة الإنجاز:</strong> 40% - زيارة التحقق</p>
-                            <p><strong>زيارة المراجعين:</strong> 05/04/2026 (متأخر)</p>
-                        </div>
-                        <span class="status-badge active">نشط</span>
-                    </div>
-                    <div class="contract-item">
-                        <div class="contract-details">
-                            <h4>الأمن السيبراني</h4>
-                            <p><strong>الجامعة:</strong> جامعة القصيم</p>
-                            <p><strong>الدرجة:</strong> ماجستير</p>
-                            <p><strong>بداية:</strong> 09/10/2024 | <strong>انتهاء:</strong> 08/10/2025</p>
-                            <p><strong>الإدارة:</strong> إدارة برامج العلوم الهندسية وعلوم الحاسب</p>
-                            <p><strong>نسبة الإنجاز:</strong> 40% - زيارة التحقق</p>
-                            <p><strong>زيارة المراجعين:</strong> 07/04/2026 (متأخر)</p>
-                        </div>
-                        <span class="status-badge active">نشط</span>
-                    </div>
-                    <div class="contract-item">
-                        <div class="contract-details">
-                            <h4>تقنية المعلومات</h4>
-                            <p><strong>الجامعة:</strong> جامعة القصيم</p>
-                            <p><strong>الدرجة:</strong> ماجستير</p>
-                            <p><strong>بداية:</strong> 09/10/2024 | <strong>انتهاء:</strong> 08/10/2025</p>
-                            <p><strong>الإدارة:</strong> إدارة برامج العلوم الهندسية وعلوم الحاسب</p>
-                            <p><strong>نسبة الإنجاز:</strong> 5% - اللقاء التعريفي</p>
-                        </div>
-                        <span class="status-badge active">نشط</span>
-                    </div>
-                    <div class="contract-item">
-                        <div class="contract-details">
-                            <h4>علوم الحاسب</h4>
-                            <p><strong>الجامعة:</strong> جامعة القصيم</p>
-                            <p><strong>الدرجة:</strong> ماجستير</p>
-                            <p><strong>بداية:</strong> 09/10/2024 | <strong>انتهاء:</strong> 08/10/2025</p>
-                            <p><strong>الإدارة:</strong> إدارة برامج العلوم الهندسية وعلوم الحاسب</p>
-                            <p><strong>نسبة الإنجاز:</strong> 40% - زيارة التحقق</p>
-                            <p><strong>زيارة المراجعين:</strong> 07/04/2026 (متأخر)</p>
-                        </div>
-                        <span class="status-badge active">نشط</span>
-                    </div>
-                    <div class="contract-item">
-                        <div class="contract-details">
-                            <h4>الصحة العامة</h4>
-                            <p><strong>الجامعة:</strong> جامعة القصيم</p>
-                            <p><strong>الدرجة:</strong> بكالوريوس</p>
-                            <p><strong>بداية:</strong> 09/10/2024 | <strong>انتهاء:</strong> 08/10/2025</p>
-                            <p><strong>الإدارة:</strong> إدارة برامج العلوم الصحية</p>
-                            <p><strong>نسبة الإنجاز:</strong> 40% - زيارة التحقق</p>
-                            <p><strong>زيارة المراجعين:</strong> 09/12/2025 (متأخر)</p>
-                        </div>
-                        <span class="status-badge active">نشط</span>
-                    </div>
-                    <div class="contract-item">
-                        <div class="contract-details">
-                            <h4>دكتور بصريات</h4>
-                            <p><strong>الجامعة:</strong> جامعة القصيم</p>
-                            <p><strong>الدرجة:</strong> بكالوريوس</p>
-                            <p><strong>بداية:</strong> 09/10/2024 | <strong>انتهاء:</strong> 08/10/2025</p>
-                            <p><strong>الإدارة:</strong> إدارة برامج العلوم الصحية</p>
-                            <p><strong>نسبة الإنجاز:</strong> 40% - زيارة التحقق</p>
-                        </div>
-                        <span class="status-badge active">نشط</span>
-                    </div>
-                    <div class="contract-item">
-                        <div class="contract-details">
-                            <h4>دكتور صيدلة</h4>
-                            <p><strong>الجامعة:</strong> جامعة القصيم</p>
-                            <p><strong>الدرجة:</strong> بكالوريوس</p>
-                            <p><strong>بداية:</strong> 09/10/2024 | <strong>انتهاء:</strong> 08/10/2025</p>
-                            <p><strong>الإدارة:</strong> إدارة برامج العلوم الصحية</p>
-                            <p><strong>نسبة الإنجاز:</strong> 30% - دراسة الوثائق</p>
-                            <p><strong>زيارة المراجعين:</strong> 25/01/2026</p>
-                        </div>
-                        <span class="status-badge active">نشط</span>
-                    </div>
-                    <div class="contract-item">
-                        <div class="contract-details">
-                            <h4>الشريعة</h4>
-                            <p><strong>الجامعة:</strong> جامعة القصيم</p>
-                            <p><strong>الدرجة:</strong> بكالوريوس</p>
-                            <p><strong>بداية:</strong> 09/10/2024 | <strong>انتهاء:</strong> 08/10/2025</p>
-                            <p><strong>الإدارة:</strong> إدارة برامج العلوم الإسلامية والعربية</p>
-                            <p><strong>نسبة الإنجاز:</strong> 40% - زيارة التحقق</p>
-                            <p><strong>زيارة المراجعين:</strong> 30/11/2025 (متأخر)</p>
-                        </div>
-                        <span class="status-badge active">نشط</span>
-                    </div>
-                    <div class="contract-item">
-                        <div class="contract-details">
-                            <h4>القراءات</h4>
-                            <p><strong>الجامعة:</strong> جامعة القصيم</p>
-                            <p><strong>الدرجة:</strong> بكالوريوس</p>
-                            <p><strong>بداية:</strong> 09/10/2024 | <strong>انتهاء:</strong> 08/10/2025</p>
-                            <p><strong>الإدارة:</strong> إدارة برامج العلوم الإسلامية والعربية</p>
-                            <p><strong>نسبة الإنجاز:</strong> 5% - اللقاء التعريفي</p>
-                        </div>
-                        <span class="status-badge active">نشط</span>
-                    </div>
-                    <div class="contract-item">
-                        <div class="contract-details">
-                            <h4>أصول الفقه</h4>
-                            <p><strong>الجامعة:</strong> جامعة القصيم</p>
-                            <p><strong>الدرجة:</strong> دكتوراه</p>
-                            <p><strong>بداية:</strong> 09/10/2024 | <strong>انتهاء:</strong> 08/10/2025</p>
-                            <p><strong>الإدارة:</strong> إدارة برامج العلوم الإسلامية والعربية</p>
-                            <p><strong>نسبة الإنجاز:</strong> 40% - زيارة التحقق</p>
-                            <p><strong>زيارة المراجعين:</strong> 07/12/2025 (متأخر)</p>
-                        </div>
-                        <span class="status-badge active">نشط</span>
-                    </div>
-                    <div class="contract-item">
-                        <div class="contract-details">
-                            <h4>السنة وعلومها</h4>
-                            <p><strong>الجامعة:</strong> جامعة القصيم</p>
-                            <p><strong>الدرجة:</strong> دكتوراه</p>
-                            <p><strong>بداية:</strong> 09/10/2024 | <strong>انتهاء:</strong> 08/10/2025</p>
-                            <p><strong>الإدارة:</strong> إدارة برامج العلوم الإسلامية والعربية</p>
-                            <p><strong>نسبة الإنجاز:</strong> 5% - اللقاء التعريفي</p>
-                        </div>
-                        <span class="status-badge active">نشط</span>
-                    </div>
-                    <div class="contract-item">
-                        <div class="contract-details">
-                            <h4>العقيدة والمذاهب المعاصرة</h4>
-                            <p><strong>الجامعة:</strong> جامعة القصيم</p>
-                            <p><strong>الدرجة:</strong> دكتوراه</p>
-                            <p><strong>بداية:</strong> 09/10/2024 | <strong>انتهاء:</strong> 08/10/2025</p>
-                            <p><strong>الإدارة:</strong> إدارة برامج العلوم الإسلامية والعربية</p>
-                            <p><strong>نسبة الإنجاز:</strong> 40% - زيارة التحقق</p>
-                            <p><strong>زيارة المراجعين:</strong> 15/12/2025</p>
-                        </div>
-                        <span class="status-badge active">نشط</span>
-                    </div>
-                    <div class="contract-item">
-                        <div class="contract-details">
-                            <h4>الأنظمة</h4>
-                            <p><strong>الجامعة:</strong> جامعة القصيم</p>
-                            <p><strong>الدرجة:</strong> ماجستير</p>
-                            <p><strong>بداية:</strong> 09/10/2024 | <strong>انتهاء:</strong> 08/10/2025</p>
-                            <p><strong>الإدارة:</strong> إدارة برامج العلوم الإسلامية والعربية</p>
-                            <p><strong>نسبة الإنجاز:</strong> 40% - زيارة التحقق</p>
-                            <p><strong>زيارة المراجعين:</strong> 25/01/2026</p>
-                        </div>
-                        <span class="status-badge active">نشط</span>
-                    </div>
-                    <div class="contract-item">
-                        <div class="contract-details">
-                            <h4>تصميم الأزياء</h4>
-                            <p><strong>الجامعة:</strong> جامعة القصيم</p>
-                            <p><strong>الدرجة:</strong> بكالوريوس</p>
-                            <p><strong>بداية:</strong> 09/10/2024 | <strong>انتهاء:</strong> 08/10/2025</p>
-                            <p><strong>الإدارة:</strong> إدارة برامج العلوم الإنسانية والتربوية</p>
-                            <p><strong>نسبة الإنجاز:</strong> 40% - زيارة التحقق</p>
-                            <p><strong>زيارة المراجعين:</strong> 01/02/2026 (متأخر)</p>
-                        </div>
-                        <span class="status-badge active">نشط</span>
-                    </div>
-                    <!-- سأكمل إضافة باقي العقود... -->
-                </div>
-            </div>
-
-            <!-- عقود 2026 -->
-            <div class="section-card">
-                <div class="section-header safe">
-                    <h3>🔵 تنتهي في 2026 (سنة كاملة أو أكثر متبقية)</h3>
-                    <span class="count-badge">252 عقد</span>
-                </div>
-                <div class="contracts-list">
-                    <!-- عقود جامعة الإمام عبد الرحمن بن فيصل -->
-                    <div class="contract-item">
-                        <div class="contract-details">
-                            <h4>العلوم في إدارة هندسة التشييد</h4>
-                            <p><strong>الجامعة:</strong> جامعة الإمام عبد الرحمن بن فيصل</p>
-                            <p><strong>الدرجة:</strong> ماجستير</p>
-                            <p><strong>بداية:</strong> 20/06/2024 | <strong>انتهاء:</strong> 31/01/2026</p>
-                            <p><strong>الإدارة:</strong> إدارة برامج العلوم الهندسية وعلوم الحاسب</p>
-                            <p><strong>نسبة الإنجاز:</strong> 5% - اللقاء التعريفي</p>
-                        </div>
-                        <span class="status-badge active">نشط</span>
-                    </div>
-                    <div class="contract-item">
-                        <div class="contract-details">
-                            <h4>التصميم الصناعي</h4>
-                            <p><strong>الجامعة:</strong> جامعة الإمام عبد الرحمن بن فيصل</p>
-                            <p><strong>الدرجة:</strong> بكالوريوس</p>
-                            <p><strong>بداية:</strong> 20/06/2024 | <strong>انتهاء:</strong> 31/01/2026</p>
-                            <p><strong>الإدارة:</strong> إدارة برامج العلوم الهندسية وعلوم الحاسب</p>
-                            <p><strong>نسبة الإنجاز:</strong> 5% - اللقاء التعريفي</p>
-                        </div>
-                        <span class="status-badge active">نشط</span>
-                    </div>
-                    <div class="contract-item">
-                        <div class="contract-details">
-                            <h4>العلوم في الإدارة الهندسية</h4>
-                            <p><strong>الجامعة:</strong> جامعة الإمام عبد الرحمن بن فيصل</p>
-                            <p><strong>الدرجة:</strong> ماجستير</p>
-                            <p><strong>بداية:</strong> 20/06/2024 | <strong>انتهاء:</strong> 31/01/2026</p>
-                            <p><strong>الإدارة:</strong> إدارة برامج العلوم الهندسية وعلوم الحاسب</p>
-                            <p><strong>نسبة الإنجاز:</strong> 5% - اللقاء التعريفي</p>
-                        </div>
-                        <span class="status-badge active">نشط</span>
-                    </div>
-                    <!-- المزيد من عقود 2026... -->
-                </div>
             </div>
         </div>
+    </header>
 
-        <!-- محتوى التبويب: تفاصيل الجامعات -->
-        <div id="universities" class="tab-content">
-            <h2>🏛️ تفاصيل الجامعات وعقودها</h2>
-            
-            <div class="search-box">
-                <input type="text" id="universitySearch" placeholder="🔍 ابحث عن جامعة..." onkeyup="filterUniversities()">
-            </div>
-
-            <div class="universities-grid">
-                <!-- الجامعة الإسلامية -->
-                <div class="university-card" onclick="showUniversityDetails('الجامعة الإسلامية')">
-                    <div class="university-header">
-                        <h3>الجامعة الإسلامية</h3>
-                        <span class="contracts-count">3 عقود</span>
-                    </div>
-                    <div class="university-stats">
-                        <div class="stat-item">
-                            <span class="stat-value">3</span>
-                            <span class="stat-name">ماجستير</span>
-                        </div>
-                        <div class="stat-item">
-                            <span class="stat-value">0</span>
-                            <span class="stat-name">بكالوريوس</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- جامعة الإمام عبد الرحمن بن فيصل -->
-                <div class="university-card" onclick="showUniversityDetails('جامعة الإمام عبد الرحمن بن فيصل')">
-                    <div class="university-header">
-                        <h3>جامعة الإمام عبد الرحمن بن فيصل</h3>
-                        <span class="contracts-count">38 عقد</span>
-                    </div>
-                    <div class="university-stats">
-                        <div class="stat-item">
-                            <span class="stat-value">18</span>
-                            <span class="stat-name">ماجستير</span>
-                        </div>
-                        <div class="stat-item">
-                            <span class="stat-value">20</span>
-                            <span class="stat-name">بكالوريوس</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- جامعة الأميرة نورة بنت عبد الرحمن -->
-                <div class="university-card" onclick="showUniversityDetails('جامعة الأميرة نورة بنت عبد الرحمن')">
-                    <div class="university-header">
-                        <h3>جامعة الأميرة نورة بنت عبد الرحمن</h3>
-                        <span class="contracts-count">16 عقد</span>
-                    </div>
-                    <div class="university-stats">
-                        <div class="stat-item">
-                            <span class="stat-value">2</span>
-                            <span class="stat-name">ماجستير</span>
-                        </div>
-                        <div class="stat-item">
-                            <span class="stat-value">8</span>
-                            <span class="stat-name">بكالوريوس</span>
-                        </div>
-                        <div class="stat-item">
-                            <span class="stat-value">6</span>
-                            <span class="stat-name">دبلوم</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- جامعة الأمير سطام بن عبد العزيز -->
-                <div class="university-card" onclick="showUniversityDetails('جامعة الأمير سطام بن عبد العزيز')">
-                    <div class="university-header">
-                        <h3>جامعة الأمير سطام بن عبد العزيز</h3>
-                        <span class="contracts-count">10 عقود</span>
-                    </div>
-                    <div class="university-stats">
-                        <div class="stat-item">
-                            <span class="stat-value">4</span>
-                            <span class="stat-name">ماجستير</span>
-                        </div>
-                        <div class="stat-item">
-                            <span class="stat-value">6</span>
-                            <span class="stat-name">بكالوريوس</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- جامعة الملك سعود -->
-                <div class="university-card" onclick="showUniversityDetails('جامعة الملك سعود')">
-                    <div class="university-header">
-                        <h3>جامعة الملك سعود</h3>
-                        <span class="contracts-count">36 عقد</span>
-                    </div>
-                    <div class="university-stats">
-                        <div class="stat-item">
-                            <span class="stat-value">19</span>
-                            <span class="stat-name">ماجستير</span>
-                        </div>
-                        <div class="stat-item">
-                            <span class="stat-value">14</span>
-                            <span class="stat-name">بكالوريوس</span>
-                        </div>
-                        <div class="stat-item">
-                            <span class="stat-value">3</span>
-                            <span class="stat-name">دكتوراه</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- جامعة القصيم -->
-                <div class="university-card" onclick="showUniversityDetails('جامعة القصيم')">
-                    <div class="university-header">
-                        <h3>جامعة القصيم</h3>
-                        <span class="contracts-count">18 عقد</span>
-                    </div>
-                    <div class="university-stats">
-                        <div class="stat-item">
-                            <span class="stat-value">8</span>
-                            <span class="stat-name">ماجستير/دكتوراه</span>
-                        </div>
-                        <div class="stat-item">
-                            <span class="stat-value">10</span>
-                            <span class="stat-name">بكالوريوس</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- جامعة الملك عبد العزيز -->
-                <div class="university-card" onclick="showUniversityDetails('جامعة الملك عبد العزيز')">
-                    <div class="university-header">
-                        <h3>جامعة الملك عبد العزيز</h3>
-                        <span class="contracts-count">73 عقد</span>
-                    </div>
-                    <div class="university-stats">
-                        <div class="stat-item">
-                            <span class="stat-value">45</span>
-                            <span class="stat-name">ماجستير</span>
-                        </div>
-                        <div class="stat-item">
-                            <span class="stat-value">22</span>
-                            <span class="stat-name">بكالوريوس</span>
-                        </div>
-                        <div class="stat-item">
-                            <span class="stat-value">6</span>
-                            <span class="stat-name">دكتوراه</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- جامعة الملك فيصل -->
-                <div class="university-card" onclick="showUniversityDetails('جامعة الملك فيصل')">
-                    <div class="university-header">
-                        <h3>جامعة الملك فيصل</h3>
-                        <span class="contracts-count">22 عقد</span>
-                    </div>
-                    <div class="university-stats">
-                        <div class="stat-item">
-                            <span class="stat-value">15</span>
-                            <span class="stat-name">ماجستير</span>
-                        </div>
-                        <div class="stat-item">
-                            <span class="stat-value">6</span>
-                            <span class="stat-name">بكالوريوس</span>
-                        </div>
-                        <div class="stat-item">
-                            <span class="stat-value">1</span>
-                            <span class="stat-name">دكتوراه</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- جامعة جدة -->
-                <div class="university-card" onclick="showUniversityDetails('جامعة جدة')">
-                    <div class="university-header">
-                        <h3>جامعة جدة</h3>
-                        <span class="contracts-count">26 عقد</span>
-                    </div>
-                    <div class="university-stats">
-                        <div class="stat-item">
-                            <span class="stat-value">0</span>
-                            <span class="stat-name">ماجستير</span>
-                        </div>
-                        <div class="stat-item">
-                            <span class="stat-value">26</span>
-                            <span class="stat-name">بكالوريوس</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- جامعة حائل -->
-                <div class="university-card" onclick="showUniversityDetails('جامعة حائل')">
-                    <div class="university-header">
-                        <h3>جامعة حائل</h3>
-                        <span class="contracts-count">6 عقود</span>
-                    </div>
-                    <div class="university-stats">
-                        <div class="stat-item">
-                            <span class="stat-value">6</span>
-                            <span class="stat-name">ماجستير</span>
-                        </div>
-                        <div class="stat-item">
-                            <span class="stat-value">0</span>
-                            <span class="stat-name">بكالوريوس</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- جامعة حفر الباطن -->
-                <div class="university-card" onclick="showUniversityDetails('جامعة حفر الباطن')">
-                    <div class="university-header">
-                        <h3>جامعة حفر الباطن</h3>
-                        <span class="contracts-count">30 عقد</span>
-                    </div>
-                    <div class="university-stats">
-                        <div class="stat-item">
-                            <span class="stat-value">5</span>
-                            <span class="stat-name">ماجستير</span>
-                        </div>
-                        <div class="stat-item">
-                            <span class="stat-value">25</span>
-                            <span class="stat-name">بكالوريوس</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- جامعة طيبة -->
-                <div class="university-card" onclick="showUniversityDetails('جامعة طيبة')">
-                    <div class="university-header">
-                        <h3>جامعة طيبة</h3>
-                        <span class="contracts-count">30 عقد</span>
-                    </div>
-                    <div class="university-stats">
-                        <div class="stat-item">
-                            <span class="stat-value">8</span>
-                            <span class="stat-name">ماجستير</span>
-                        </div>
-                        <div class="stat-item">
-                            <span class="stat-value">22</span>
-                            <span class="stat-name">بكالوريوس</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- جامعة جازان -->
-                <div class="university-card" onclick="showUniversityDetails('جامعة جازان')">
-                    <div class="university-header">
-                        <h3>جامعة جازان</h3>
-                        <span class="contracts-count">18 عقد</span>
-                    </div>
-                    <div class="university-stats">
-                        <div class="stat-item">
-                            <span class="stat-value">7</span>
-                            <span class="stat-name">ماجستير</span>
-                        </div>
-                        <div class="stat-item">
-                            <span class="stat-value">10</span>
-                            <span class="stat-name">بكالوريوس</span>
-                        </div>
-                        <div class="stat-item">
-                            <span class="stat-value">1</span>
-                            <span class="stat-name">دكتوراه</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- جامعة نجران -->
-                <div class="university-card" onclick="showUniversityDetails('جامعة نجران')">
-                    <div class="university-header">
-                        <h3>جامعة نجران</h3>
-                        <span class="contracts-count">6 عقود</span>
-                    </div>
-                    <div class="university-stats">
-                        <div class="stat-item">
-                            <span class="stat-value">0</span>
-                            <span class="stat-name">ماجستير</span>
-                        </div>
-                        <div class="stat-item">
-                            <span class="stat-value">6</span>
-                            <span class="stat-name">بكالوريوس</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- جامعة الطائف -->
-                <div class="university-card" onclick="showUniversityDetails('جامعة الطائف')">
-                    <div class="university-header">
-                        <h3>جامعة الطائف</h3>
-                        <span class="contracts-count">25 عقد</span>
-                    </div>
-                    <div class="university-stats">
-                        <div class="stat-item">
-                            <span class="stat-value">12</span>
-                            <span class="stat-name">ماجستير</span>
-                        </div>
-                        <div class="stat-item">
-                            <span class="stat-value">13</span>
-                            <span class="stat-name">بكالوريوس</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- جامعة المجمعة -->
-                <div class="university-card" onclick="showUniversityDetails('جامعة المجمعة')">
-                    <div class="university-header">
-                        <h3>جامعة المجمعة</h3>
-                        <span class="contracts-count">6 عقود</span>
-                    </div>
-                    <div class="university-stats">
-                        <div class="stat-item">
-                            <span class="stat-value">6</span>
-                            <span class="stat-name">ماجستير</span>
-                        </div>
-                        <div class="stat-item">
-                            <span class="stat-value">0</span>
-                            <span class="stat-name">بكالوريوس</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- جامعة الجوف -->
-                <div class="university-card" onclick="showUniversityDetails('جامعة الجوف')">
-                    <div class="university-header">
-                        <h3>جامعة الجوف</h3>
-                        <span class="contracts-count">6 عقود</span>
-                    </div>
-                    <div class="university-stats">
-                        <div class="stat-item">
-                            <span class="stat-value">4</span>
-                            <span class="stat-name">ماجستير</span>
-                        </div>
-                        <div class="stat-item">
-                            <span class="stat-value">2</span>
-                            <span class="stat-name">بكالوريوس</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- جامعة بيشة -->
-                <div class="university-card" onclick="showUniversityDetails('جامعة بيشة')">
-                    <div class="university-header">
-                        <h3>جامعة بيشة</h3>
-                        <span class="contracts-count">3 عقود</span>
-                    </div>
-                    <div class="university-stats">
-                        <div class="stat-item">
-                            <span class="stat-value">0</span>
-                            <span class="stat-name">ماجستير</span>
-                        </div>
-                        <div class="stat-item">
-                            <span class="stat-value">3</span>
-                            <span class="stat-name">بكالوريوس</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- جامعة تبوك -->
-                <div class="university-card" onclick="showUniversityDetails('جامعة تبوك')">
-                    <div class="university-header">
-                        <h3>جامعة تبوك</h3>
-                        <span class="contracts-count">2 عقد</span>
-                    </div>
-                    <div class="university-stats">
-                        <div class="stat-item">
-                            <span class="stat-value">2</span>
-                            <span class="stat-name">ماجستير</span>
-                        </div>
-                        <div class="stat-item">
-                            <span class="stat-value">0</span>
-                            <span class="stat-name">بكالوريوس</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- جامعة الباحة -->
-                <div class="university-card" onclick="showUniversityDetails('جامعة الباحة')">
-                    <div class="university-header">
-                        <h3>جامعة الباحة</h3>
-                        <span class="contracts-count">9 عقود</span>
-                    </div>
-                    <div class="university-stats">
-                        <div class="stat-item">
-                            <span class="stat-value">5</span>
-                            <span class="stat-name">ماجستير</span>
-                        </div>
-                        <div class="stat-item">
-                            <span class="stat-value">4</span>
-                            <span class="stat-name">بكالوريوس</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- جامعة المعرفة -->
-                <div class="university-card" onclick="showUniversityDetails('جامعة المعرفة')">
-                    <div class="university-header">
-                        <h3>جامعة المعرفة</h3>
-                        <span class="contracts-count">4 عقود</span>
-                    </div>
-                    <div class="university-stats">
-                        <div class="stat-item">
-                            <span class="stat-value">0</span>
-                            <span class="stat-name">ماجستير</span>
-                        </div>
-                        <div class="stat-item">
-                            <span class="stat-value">4</span>
-                            <span class="stat-name">بكالوريوس</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- جامعة شقراء -->
-                <div class="university-card" onclick="showUniversityDetails('جامعة شقراء')">
-                    <div class="university-header">
-                        <h3>جامعة شقراء</h3>
-                        <span class="contracts-count">10 عقود</span>
-                    </div>
-                    <div class="university-stats">
-                        <div class="stat-item">
-                            <span class="stat-value">2</span>
-                            <span class="stat-name">ماجستير</span>
-                        </div>
-                        <div class="stat-item">
-                            <span class="stat-value">8</span>
-                            <span class="stat-name">بكالوريوس</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- جامعة الأعمال والتكنولوجيا -->
-                <div class="university-card" onclick="showUniversityDetails('جامعة الأعمال والتكنولوجيا')">
-                    <div class="university-header">
-                        <h3>جامعة الأعمال والتكنولوجيا</h3>
-                        <span class="contracts-count">3 عقود</span>
-                    </div>
-                    <div class="university-stats">
-                        <div class="stat-item">
-                            <span class="stat-value">0</span>
-                            <span class="stat-name">ماجستير</span>
-                        </div>
-                        <div class="stat-item">
-                            <span class="stat-value">3</span>
-                            <span class="stat-name">بكالوريوس</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- جامعة عفت -->
-                <div class="university-card" onclick="showUniversityDetails('جامعة عفت')">
-                    <div class="university-header">
-                        <h3>جامعة عفت</h3>
-                        <span class="contracts-count">2 عقد</span>
-                    </div>
-                    <div class="university-stats">
-                        <div class="stat-item">
-                            <span class="stat-value">0</span>
-                            <span class="stat-name">ماجستير</span>
-                        </div>
-                        <div class="stat-item">
-                            <span class="stat-value">2</span>
-                            <span class="stat-name">بكالوريوس</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- جامعة الملك سعود بن عبد العزيز للعلوم الصحية -->
-                <div class="university-card" onclick="showUniversityDetails('جامعة الملك سعود بن عبد العزيز للعلوم الصحية')">
-                    <div class="university-header">
-                        <h3>جامعة الملك سعود بن عبد العزيز للعلوم الصحية</h3>
-                        <span class="contracts-count">2 عقد</span>
-                    </div>
-                    <div class="university-stats">
-                        <div class="stat-item">
-                            <span class="stat-value">0</span>
-                            <span class="stat-name">ماجستير</span>
-                        </div>
-                        <div class="stat-item">
-                            <span class="stat-value">2</span>
-                            <span class="stat-name">بكالوريوس</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- جامعة الإمام محمد بن سعود الإسلامية -->
-                <div class="university-card" onclick="showUniversityDetails('جامعة الإمام محمد بن سعود الإسلامية')">
-                    <div class="university-header">
-                        <h3>جامعة الإمام محمد بن سعود الإسلامية</h3>
-                        <span class="contracts-count">2 عقد</span>
-                    </div>
-                    <div class="university-stats">
-                        <div class="stat-item">
-                            <span class="stat-value">1</span>
-                            <span class="stat-name">ماجستير</span>
-                        </div>
-                        <div class="stat-item">
-                            <span class="stat-value">0</span>
-                            <span class="stat-name">بكالوريوس</span>
-                        </div>
-                        <div class="stat-item">
-                            <span class="stat-value">1</span>
-                            <span class="stat-name">دكتوراه</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- جامعة أم القرى -->
-                <div class="university-card" onclick="showUniversityDetails('جامعة أم القرى')">
-                    <div class="university-header">
-                        <h3>جامعة أم القرى</h3>
-                        <span class="contracts-count">10 عقود</span>
-                    </div>
-                    <div class="university-stats">
-                        <div class="stat-item">
-                            <span class="stat-value">8</span>
-                            <span class="stat-name">ماجستير</span>
-                        </div>
-                        <div class="stat-item">
-                            <span class="stat-value">0</span>
-                            <span class="stat-name">بكالوريوس</span>
-                        </div>
-                        <div class="stat-item">
-                            <span class="stat-value">2</span>
-                            <span class="stat-name">دكتوراه</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- جامعة الفيصل -->
-                <div class="university-card" onclick="showUniversityDetails('جامعة الفيصل')">
-                    <div class="university-header">
-                        <h3>جامعة الفيصل</h3>
-                        <span class="contracts-count">1 عقد</span>
-                    </div>
-                    <div class="university-stats">
-                        <div class="stat-item">
-                            <span class="stat-value">1</span>
-                            <span class="stat-name">ماجستير</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- جامعة اليمامة -->
-                <div class="university-card" onclick="showUniversityDetails('جامعة اليمامة')">
-                    <div class="university-header">
-                        <h3>جامعة اليمامة</h3>
-                        <span class="contracts-count">1 عقد</span>
-                    </div>
-                    <div class="university-stats">
-                        <div class="stat-item">
-                            <span class="stat-value">1</span>
-                            <span class="stat-name">ماجستير</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- كليات الأصالة -->
-                <div class="university-card" onclick="showUniversityDetails('كليات الأصالة')">
-                    <div class="university-header">
-                        <h3>كليات الأصالة</h3>
-                        <span class="contracts-count">4 عقود</span>
-                    </div>
-                    <div class="university-stats">
-                        <div class="stat-item">
-                            <span class="stat-value">0</span>
-                            <span class="stat-name">ماجستير</span>
-                        </div>
-                        <div class="stat-item">
-                            <span class="stat-value">4</span>
-                            <span class="stat-name">بكالوريوس</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- كليات بريدة الأهلية -->
-                <div class="university-card" onclick="showUniversityDetails('كليات بريدة الأهلية')">
-                    <div class="university-header">
-                        <h3>كليات بريدة الأهلية</h3>
-                        <span class="contracts-count">4 عقود</span>
-                    </div>
-                    <div class="university-stats">
-                        <div class="stat-item">
-                            <span class="stat-value">0</span>
-                            <span class="stat-name">ماجستير</span>
-                        </div>
-                        <div class="stat-item">
-                            <span class="stat-value">4</span>
-                            <span class="stat-name">بكالوريوس</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- كليات عنيزة -->
-                <div class="university-card" onclick="showUniversityDetails('كليات عنيزة')">
-                    <div class="university-header">
-                        <h3>كليات عنيزة</h3>
-                        <span class="contracts-count">2 عقد</span>
-                    </div>
-                    <div class="university-stats">
-                        <div class="stat-item">
-                            <span class="stat-value">0</span>
-                            <span class="stat-name">ماجستير</span>
-                        </div>
-                        <div class="stat-item">
-                            <span class="stat-value">2</span>
-                            <span class="stat-name">بكالوريوس</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- كلية الأمير سلطان العسكرية للعلوم الصحية -->
-                <div class="university-card" onclick="showUniversityDetails('كلية الأمير سلطان العسكرية للعلوم الصحية بالظهران')">
-                    <div class="university-header">
-                        <h3>كلية الأمير سلطان العسكرية</h3>
-                        <span class="contracts-count">2 عقد</span>
-                    </div>
-                    <div class="university-stats">
-                        <div class="stat-item">
-                            <span class="stat-value">0</span>
-                            <span class="stat-name">ماجستير</span>
-                        </div>
-                        <div class="stat-item">
-                            <span class="stat-value">2</span>
-                            <span class="stat-name">بكالوريوس</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- كلية الخليج للعلوم الإدارية والإنسانية -->
-                <div class="university-card" onclick="showUniversityDetails('كلية الخليج للعلوم الإدارية والإنسانية')">
-                    <div class="university-header">
-                        <h3>كلية الخليج</h3>
-                        <span class="contracts-count">1 عقد</span>
-                    </div>
-                    <div class="university-stats">
-                        <div class="stat-item">
-                            <span class="stat-value">0</span>
-                            <span class="stat-name">ماجستير</span>
-                        </div>
-                        <div class="stat-item">
-                            <span class="stat-value">1</span>
-                            <span class="stat-name">بكالوريوس</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- كلية الريان الأهلية -->
-                <div class="university-card" onclick="showUniversityDetails('كلية الريان الأهلية')">
-                    <div class="university-header">
-                        <h3>كلية الريان الأهلية</h3>
-                        <span class="contracts-count">1 عقد</span>
-                    </div>
-                    <div class="university-stats">
-                        <div class="stat-item">
-                            <span class="stat-value">0</span>
-                            <span class="stat-name">ماجستير</span>
-                        </div>
-                        <div class="stat-item">
-                            <span class="stat-value">1</span>
-                            <span class="stat-name">بكالوريوس</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- كلية الملك فهد الأمنية -->
-                <div class="university-card" onclick="showUniversityDetails('كلية الملك فهد الأمنية')">
-                    <div class="university-header">
-                        <h3>كلية الملك فهد الأمنية</h3>
-                        <span class="contracts-count">1 عقد</span>
-                    </div>
-                    <div class="university-stats">
-                        <div class="stat-item">
-                            <span class="stat-value">0</span>
-                            <span class="stat-name">ماجستير</span>
-                        </div>
-                        <div class="stat-item">
-                            <span class="stat-value">1</span>
-                            <span class="stat-name">بكالوريوس</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- كلية جدة العالمية -->
-                <div class="university-card" onclick="showUniversityDetails('كلية جدة العالمية')">
-                    <div class="university-header">
-                        <h3>كلية جدة العالمية</h3>
-                        <span class="contracts-count">2 عقد</span>
-                    </div>
-                    <div class="university-stats">
-                        <div class="stat-item">
-                            <span class="stat-value">0</span>
-                            <span class="stat-name">ماجستير</span>
-                        </div>
-                        <div class="stat-item">
-                            <span class="stat-value">2</span>
-                            <span class="stat-name">بكالوريوس</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- جامعة سليمان الراجحي -->
-                <div class="university-card" onclick="showUniversityDetails('جامعة سليمان الراجحي')">
-                    <div class="university-header">
-                        <h3>جامعة سليمان الراجحي</h3>
-                        <span class="contracts-count">1 عقد</span>
-                    </div>
-                    <div class="university-stats">
-                        <div class="stat-item">
-                            <span class="stat-value">0</span>
-                            <span class="stat-name">ماجستير</span>
-                        </div>
-                        <div class="stat-item">
-                            <span class="stat-value">1</span>
-                            <span class="stat-name">بكالوريوس</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- جامعة الملك خالد -->
-                <div class="university-card" onclick="showUniversityDetails('جامعة الملك خالد')">
-                    <div class="university-header">
-                        <h3>جامعة الملك خالد</h3>
-                        <span class="contracts-count">1 عقد</span>
-                    </div>
-                    <div class="university-stats">
-                        <div class="stat-item">
-                            <span class="stat-value">0</span>
-                            <span class="stat-name">ماجستير</span>
-                        </div>
-                        <div class="stat-item">
-                            <span class="stat-value">1</span>
-                            <span class="stat-name">بكالوريوس</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <nav class="main-nav">
+        <div class="nav-container">
+            <button class="nav-btn active" data-tab="contracts">حالة العقود</button>
+            <button class="nav-btn" data-tab="universities">تفاصيل الجامعات</button>
+            <button class="nav-btn" data-tab="specializations">التخصصات</button>
+            <button class="nav-btn" data-tab="dates">البحث بالتواريخ</button>
+            <button class="nav-btn" data-tab="departments">الإدارات المختصة</button>
+            <button class="nav-btn" data-tab="all-contracts">جميع العقود</button>
         </div>
+    </nav>
 
-        <!-- محتوى التبويب: التخصصات -->
-        <div id="majors" class="tab-content">
-            <h2>📚 التخصصات والبرامج الأكاديمية</h2>
+    <main class="main-content">
+        <!-- قسم حالة العقود -->
+        <section id="contracts" class="tab-content active">
+            <div class="section-header">
+                <h2>توزيع العقود حسب حالة الانتهاء</h2>
+            </div>
             
-            <div class="majors-categories">
-                <!-- التخصصات الهندسية وعلوم الحاسب -->
-                <div class="major-category">
-                    <div class="category-header" onclick="toggleMajorCategory('engineering')">
-                        <h3>💻 التخصصات الهندسية وعلوم الحاسب</h3>
-                        <span class="category-count">140 عقد</span>
+            <div class="cards-grid">
+                <div class="status-card card-red">
+                    <div class="card-header">
+                        <h3>منتهية أو قريبة من الانتهاء</h3>
+                        <span class="period">تنتهي قبل نهاية 2024</span>
                     </div>
-                    <div class="majors-list" id="engineering-majors">
-                        <!-- سيتم ملء هذا القسم بجافاسكريبت -->
+                    <div class="card-body">
+                        <div class="big-number">8</div>
+                        <p class="card-description">عقود تتطلب تجديد عاجل</p>
                     </div>
+                    <button class="view-details-btn" onclick="showContractsByExpiry('2024')">عرض التفاصيل</button>
                 </div>
 
-                <!-- التخصصات الصحية -->
-                <div class="major-category">
-                    <div class="category-header" onclick="toggleMajorCategory('health')">
-                        <h3>🏥 التخصصات الصحية</h3>
-                        <span class="category-count">112 عقد</span>
+                <div class="status-card card-orange">
+                    <div class="card-header">
+                        <h3>تنتهي في النصف الأول 2025</h3>
+                        <span class="period">يناير - يونيو 2025</span>
                     </div>
-                    <div class="majors-list" id="health-majors">
-                        <!-- سيتم ملء هذا القسم بجافاسكريبت -->
+                    <div class="card-body">
+                        <div class="big-number">103</div>
+                        <p class="card-description">عقود تحتاج متابعة قريبة</p>
                     </div>
+                    <button class="view-details-btn" onclick="showContractsByExpiry('2025-H1')">عرض التفاصيل</button>
                 </div>
 
-                <!-- العلوم الإنسانية والتربوية -->
-                <div class="major-category">
-                    <div class="category-header" onclick="toggleMajorCategory('humanities')">
-                        <h3>📖 العلوم الإنسانية والتربوية</h3>
-                        <span class="category-count">125 عقد</span>
+                <div class="status-card card-yellow">
+                    <div class="card-header">
+                        <h3>تنتهي في النصف الثاني 2025</h3>
+                        <span class="period">يوليو - ديسمبر 2025</span>
                     </div>
-                    <div class="majors-list" id="humanities-majors">
-                        <!-- سيتم ملء هذا القسم بجافاسكريبت -->
+                    <div class="card-body">
+                        <div class="big-number">85</div>
+                        <p class="card-description">عقود في مرحلة متوسطة</p>
                     </div>
+                    <button class="view-details-btn" onclick="showContractsByExpiry('2025-H2')">عرض التفاصيل</button>
                 </div>
 
-                <!-- العلوم الإسلامية والعربية -->
-                <div class="major-category">
-                    <div class="category-header" onclick="toggleMajorCategory('islamic')">
-                        <h3>🕌 العلوم الإسلامية والعربية</h3>
-                        <span class="category-count">38 عقد</span>
+                <div class="status-card card-green">
+                    <div class="card-header">
+                        <h3>تنتهي في 2026</h3>
+                        <span class="period">سنة كاملة أو أكثر متبقية</span>
                     </div>
-                    <div class="majors-list" id="islamic-majors">
-                        <!-- سيتم ملء هذا القسم بجافاسكريبت -->
+                    <div class="card-body">
+                        <div class="big-number">249</div>
+                        <p class="card-description">عقود مستقرة</p>
                     </div>
-                </div>
-
-                <!-- التخصصات العلمية -->
-                <div class="major-category">
-                    <div class="category-header" onclick="toggleMajorCategory('science')">
-                        <h3>🔬 التخصصات العلمية</h3>
-                        <span class="category-count">30 عقد</span>
-                    </div>
-                    <div class="majors-list" id="science-majors">
-                        <!-- سيتم ملء هذا القسم بجافاسكريبت -->
-                    </div>
+                    <button class="view-details-btn" onclick="showContractsByExpiry('2026')">عرض التفاصيل</button>
                 </div>
             </div>
-        </div>
 
-        <!-- محتوى التبويب: البحث بالتاريخ -->
-        <div id="dates" class="tab-content">
-            <h2>📅 البحث في العقود حسب التاريخ</h2>
-            
-            <div class="date-search-section">
+            <div id="expiry-details" class="details-section hidden"></div>
+        </section>
+
+        <!-- قسم تفاصيل الجامعات -->
+        <section id="universities" class="tab-content">
+            <div class="section-header">
+                <h2>تفاصيل الجامعات حسب عدد العقود</h2>
+                <div class="search-box">
+                    <input type="text" id="uni-search" placeholder="البحث عن جامعة..." class="gov-input">
+                </div>
+            </div>
+
+            <div class="universities-grid" id="universities-list"></div>
+            <div id="university-details" class="details-section hidden"></div>
+        </section>
+
+        <!-- قسم التخصصات -->
+        <section id="specializations" class="tab-content">
+            <div class="section-header">
+                <h2>التخصصات الأكاديمية</h2>
+            </div>
+
+            <div class="spec-categories">
+                <div class="spec-card" onclick="showSpecialization('engineering')">
+                    <div class="spec-icon">🔧</div>
+                    <h3>التخصصات الهندسية وعلوم الحاسب</h3>
+                    <div class="spec-count" id="eng-count">0 عقد</div>
+                </div>
+
+                <div class="spec-card" onclick="showSpecialization('health')">
+                    <div class="spec-icon">⚕️</div>
+                    <h3>التخصصات الصحية</h3>
+                    <div class="spec-count" id="health-count">0 عقد</div>
+                </div>
+
+                <div class="spec-card" onclick="showSpecialization('humanities')">
+                    <div class="spec-icon">📚</div>
+                    <h3>العلوم الإنسانية والتربوية</h3>
+                    <div class="spec-count" id="hum-count">0 عقد</div>
+                </div>
+
+                <div class="spec-card" onclick="showSpecialization('islamic')">
+                    <div class="spec-icon">🕌</div>
+                    <h3>العلوم الإسلامية والعربية</h3>
+                    <div class="spec-count" id="isl-count">0 عقد</div>
+                </div>
+
+                <div class="spec-card" onclick="showSpecialization('science')">
+                    <div class="spec-icon">🔬</div>
+                    <h3>التخصصات العلمية</h3>
+                    <div class="spec-count" id="sci-count">0 عقد</div>
+                </div>
+            </div>
+
+            <div id="specialization-details" class="details-section hidden"></div>
+        </section>
+
+        <!-- قسم البحث بالتواريخ -->
+        <section id="dates" class="tab-content">
+            <div class="section-header">
+                <h2>البحث في العقود بالتاريخ</h2>
+            </div>
+
+            <div class="date-search-container">
                 <div class="date-inputs">
                     <div class="input-group">
-                        <label>ابحث عن عقود بتاريخ محدد:</label>
-                        <input type="date" id="specificDate" onchange="searchByDate()">
+                        <label for="search-date">اختر التاريخ:</label>
+                        <input type="date" id="search-date" class="gov-input">
                     </div>
-                    <div class="input-group">
-                        <label>أو ابحث في فترة زمنية:</label>
-                        <div class="date-range">
-                            <input type="date" id="startDate" placeholder="من تاريخ">
-                            <span>إلى</span>
-                            <input type="date" id="endDate" placeholder="إلى تاريخ">
-                            <button onclick="searchByDateRange()">بحث</button>
-                        </div>
-                    </div>
+                    <button onclick="searchByDate()" class="primary-btn">بحث</button>
                 </div>
-                
-                <div id="dateSearchResults" class="search-results"></div>
-            </div>
-        </div>
 
-        <!-- محتوى التبويب: الإدارات -->
-        <div id="departments" class="tab-content">
-            <h2>🏢 توزيع العقود على الإدارات المختصة</h2>
-            
+                <div class="date-filters">
+                    <h3>بحث سريع:</h3>
+                    <button onclick="searchByDateRange('start', '2024-01-01', '2024-12-31')" class="filter-btn">عقود بدأت في 2024</button>
+                    <button onclick="searchByDateRange('start', '2025-01-01', '2025-12-31')" class="filter-btn">عقود بدأت في 2025</button>
+                    <button onclick="searchByDateRange('end', '2025-01-01', '2025-06-30')" class="filter-btn">تنتهي H1 2025</button>
+                    <button onclick="searchByDateRange('end', '2025-07-01', '2025-12-31')" class="filter-btn">تنتهي H2 2025</button>
+                    <button onclick="searchByDateRange('end', '2026-01-01', '2026-12-31')" class="filter-btn">تنتهي في 2026</button>
+                </div>
+            </div>
+
+            <div id="date-results" class="details-section hidden"></div>
+        </section>
+
+        <!-- قسم الإدارات المختصة -->
+        <section id="departments" class="tab-content">
+            <div class="section-header">
+                <h2>توزيع العقود على الإدارات المختصة</h2>
+            </div>
+
             <div class="departments-grid">
-                <!-- إدارة برامج العلوم الإنسانية والتربوية -->
-                <div class="department-card" onclick="showDepartmentDetails('إدارة برامج العلوم الإنسانية والتربوية')">
-                    <div class="department-icon">📖</div>
-                    <h3>إدارة برامج العلوم الإنسانية والتربوية</h3>
-                    <div class="department-stats">
-                        <span class="contracts-count">125 عقد</span>
-                        <div class="progress-bar">
-                            <div class="progress" style="width: 28%"></div>
-                        </div>
-                        <span class="percentage">28% من إجمالي العقود</span>
+                <div class="dept-card" onclick="showDepartmentContracts('إدارة برامج العلوم الإنسانية والتربوية')">
+                    <div class="dept-header">
+                        <div class="dept-icon">📚</div>
+                        <h3>إدارة برامج العلوم الإنسانية والتربوية</h3>
+                    </div>
+                    <div class="dept-stats">
+                        <div class="dept-count" id="dept-hum-count">0</div>
+                        <span>عقد</span>
                     </div>
                 </div>
 
-                <!-- إدارة برامج العلوم الهندسية وعلوم الحاسب -->
-                <div class="department-card" onclick="showDepartmentDetails('إدارة برامج العلوم الهندسية وعلوم الحاسب')">
-                    <div class="department-icon">💻</div>
-                    <h3>إدارة برامج العلوم الهندسية وعلوم الحاسب</h3>
-                    <div class="department-stats">
-                        <span class="contracts-count">140 عقد</span>
-                        <div class="progress-bar">
-                            <div class="progress" style="width: 31.5%"></div>
-                        </div>
-                        <span class="percentage">31.5% من إجمالي العقود</span>
+                <div class="dept-card" onclick="showDepartmentContracts('إدارة برامج العلوم الهندسية وعلوم الحاسب')">
+                    <div class="dept-header">
+                        <div class="dept-icon">🔧</div>
+                        <h3>إدارة برامج العلوم الهندسية وعلوم الحاسب</h3>
+                    </div>
+                    <div class="dept-stats">
+                        <div class="dept-count" id="dept-eng-count">0</div>
+                        <span>عقد</span>
                     </div>
                 </div>
 
-                <!-- إدارة برامج العلوم الصحية -->
-                <div class="department-card" onclick="showDepartmentDetails('إدارة برامج العلوم الصحية')">
-                    <div class="department-icon">🏥</div>
-                    <h3>إدارة برامج العلوم الصحية</h3>
-                    <div class="department-stats">
-                        <span class="contracts-count">112 عقد</span>
-                        <div class="progress-bar">
-                            <div class="progress" style="width: 25%"></div>
-                        </div>
-                        <span class="percentage">25% من إجمالي العقود</span>
+                <div class="dept-card" onclick="showDepartmentContracts('إدارة برامج العلوم الصحية')">
+                    <div class="dept-header">
+                        <div class="dept-icon">⚕️</div>
+                        <h3>إدارة برامج العلوم الصحية</h3>
+                    </div>
+                    <div class="dept-stats">
+                        <div class="dept-count" id="dept-health-count">0</div>
+                        <span>عقد</span>
                     </div>
                 </div>
 
-                <!-- إدارة برامج العلوم الإسلامية والعربية -->
-                <div class="department-card" onclick="showDepartmentDetails('إدارة برامج العلوم الإسلامية والعربية')">
-                    <div class="department-icon">🕌</div>
-                    <h3>إدارة برامج العلوم الإسلامية والعربية</h3>
-                    <div class="department-stats">
-                        <span class="contracts-count">38 عقد</span>
-                        <div class="progress-bar">
-                            <div class="progress" style="width: 8.5%"></div>
-                        </div>
-                        <span class="percentage">8.5% من إجمالي العقود</span>
+                <div class="dept-card" onclick="showDepartmentContracts('إدارة برامج العلوم الإسلامية والعربية')">
+                    <div class="dept-header">
+                        <div class="dept-icon">🕌</div>
+                        <h3>إدارة برامج العلوم الإسلامية والعربية</h3>
+                    </div>
+                    <div class="dept-stats">
+                        <div class="dept-count" id="dept-isl-count">0</div>
+                        <span>عقد</span>
                     </div>
                 </div>
 
-                <!-- إدارة برامج التخصصات العلمية -->
-                <div class="department-card" onclick="showDepartmentDetails('إدارة برامج التخصصات العلمية')">
-                    <div class="department-icon">🔬</div>
-                    <h3>إدارة برامج التخصصات العلمية</h3>
-                    <div class="department-stats">
-                        <span class="contracts-count">30 عقد</span>
-                        <div class="progress-bar">
-                            <div class="progress" style="width: 7%"></div>
-                        </div>
-                        <span class="percentage">7% من إجمالي العقود</span>
+                <div class="dept-card" onclick="showDepartmentContracts('إدارة برامج التخصصات العلمية')">
+                    <div class="dept-header">
+                        <div class="dept-icon">🔬</div>
+                        <h3>إدارة برامج التخصصات العلمية</h3>
+                    </div>
+                    <div class="dept-stats">
+                        <div class="dept-count" id="dept-sci-count">0</div>
+                        <span>عقد</span>
                     </div>
                 </div>
             </div>
+
+            <div id="department-details" class="details-section hidden"></div>
+        </section>
+
+        <!-- قسم جميع العقود -->
+        <section id="all-contracts" class="tab-content">
+            <div class="section-header">
+                <h2>جميع العقود - قاعدة البيانات الكاملة</h2>
+                <div class="filters-row">
+                    <input type="text" id="all-contracts-search" placeholder="البحث في جميع الحقول..." class="gov-input">
+                    <select id="filter-university" class="gov-select">
+                        <option value="">جميع الجامعات</option>
+                    </select>
+                    <select id="filter-department" class="gov-select">
+                        <option value="">جميع الإدارات</option>
+                    </select>
+                    <select id="filter-degree" class="gov-select">
+                        <option value="">جميع الدرجات</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="table-container">
+                <table class="contracts-table" id="all-contracts-table">
+                    <thead>
+                        <tr>
+                            <th>الجامعة/الكلية</th>
+                            <th>اسم البرنامج</th>
+                            <th>الدرجة العلمية</th>
+                            <th>الإدارة المختصة</th>
+                            <th>بداية العقد</th>
+                            <th>انتهاء العقد</th>
+                            <th>نسبة الإنجاز</th>
+                            <th>الحالة</th>
+                            <th>الإجراءات</th>
+                        </tr>
+                    </thead>
+                    <tbody id="all-contracts-tbody"></tbody>
+                </table>
+            </div>
+            
+            <div class="pagination" id="pagination"></div>
+        </section>
+    </main>
+
+    <footer class="gov-footer">
+        <div class="footer-container">
+            <p>© 2024 المركز الوطني للتقويم والاعتماد الأكاديمي - جميع الحقوق محفوظة</p>
+            <p>نظام إدارة العقود الأكاديمية - النسخة 1.0</p>
+        </div>
+    </footer>
+
+    <!-- Modal لتفاصيل العقد -->
+    <div id="contractModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div id="modal-body"></div>
         </div>
     </div>
 
